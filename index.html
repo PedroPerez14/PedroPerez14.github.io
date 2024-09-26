@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Pedro José Pérez García (WIP)</title>
+		<title>Pedro José Pérez García</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,9 +27,9 @@
 						</ul>
 					</nav>
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon regular fa-envelope"><span class="label">Mail</span></a></li>
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/PedroPerez14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:pjperezTIC@gmail.com" class="icon regular fa-envelope"><span class="label">Mail</span></a></li>
+						<li><a href="https://www.linkedin.com/in/pedro-jose-perez-garcia/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 					</ul>
 				</div>
 			</section>
@@ -39,18 +39,15 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>About (Entire site is still Work in Progress!)</h1>
+							<h1>About</h1>
 							<span class="image left avatar">
 								<image src="images/p.png" alt="Avatar">
 							</span>
 							<p>Hi, I am Pedro, nice to meet you!</p>
 							<p>I'm a Computer Science Engineer with a strong interest in Computer Graphics and game development, especially real-time rendering and engine programming. I am also interested in other topics like Computer Vision or Virtual Reality.</p>
 							<p>I recently finished my Masters degree studies at Universidad de Zaragoza and I'm looking forward to get into the next chapter of the journey, while constantly learning and expanding my skillset.</p>
-							<p>You can check my full curriculum <a href="cv/cv_pedro_perez.pdf"> here.</a></p>
-							<!-- <p>I've always been extremely curious about how things worked under the hood and videogames fascinated me as a child, so these are the inevitable consequences of the unlimited force that is curiosity.</p> -->
-							<!-- <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
+							<p>You can check my full curriculum <b><a href="cv/cv_pedro_perez.pdf"> here.</a></b></p>
+							<!-- <ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul> -->
 						</div>
@@ -92,109 +89,138 @@
 						<h1>Personal projects</h1>
 					</div>
 					<section>
-						<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+						<a class="image fit"><img src="images/srat-rt/gamma_correction.png" alt="" data-position="center" /></a>
 						<div class="content">
 							<div class="inner">
-								<h2>Real-time spectral renderer with C++ and OpenGL *link*</h2>
-								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+								<h2>Real-time spectral renderer</h2>
+								<p>Built from scratch using <b>C++ and OpenGL</b> for my Master's Thesis. Spectral rendering is achieved by applying <b>spectral upsampling</b> over RGB reflectance textures, adapted from <b><a href="https://rgl.epfl.ch/publications/Jakob2019Spectral">this paper</a></b>. It also allows for oceanic rendering, adapted from <b><a href="https://www.eurographics.es/wp-content/uploads/2023/05/TFM_underwater_rendering_CEIG2023.pdf">this other paper</a></b>. Observer sensitivity curves and oceanic water type customization on the fly are supported.</p>
 								<ul class="actions">
-									<li><a href="generic.html" class="button">Learn more</a></li>
+									<li><a href="https://github.com/PedroPerez14/sRAT-RT" class="button">Check the code and thesis!</a></li>
 								</ul>
 							</div>
 						</div>
 					</section>
 					<section>
-						<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+						<a class="image fit"><img src="images/clouds_msoa_pt/nube_square.png" alt="" data-position="center" /></a>
 						<div class="content">
 							<div class="inner">
-								<h2>Volumetric Path Tracer in C++ with Multiple Importance Sampling *link*</h2>
-								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+								<h2>Volumetric Path Tracer with Multiple Importance Sampling</h2>
+								<p>Built using <b>C++</b> on top of the <b><a href="https://github.com/wjakob/nori">Nori</a></b> code skeleton. It allows for full rendering of participating media by using <b>path tracing</b>, simulating <b>both single and multiple scattering</b>. It also allows loading .vdb volumetric data via custom Blender add-ons.</p>
 								<ul class="actions">
-									<li><a href="generic.html" class="button">Learn more</a></li>
+									<li><a href="https://github.com/PedroPerez14/MSoA-participating-media" class="button">Check the code and report!</a></li>
 								</ul>
 							</div>
 						</div>
 					</section>
 					<section>
-						<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+						<a class="image fit"><img src="images/computervision-inator/readme_img.png" alt="" data-position="center" /></a>
 						<div class="content">
 							<div class="inner">
-								<h2>DOOM 1993 Clone in C++ *link*</h2>
-								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+								<h2>ComputerVision-inator</h2>
+								<p>Written on <b>Python</b>, this program performs <b>semi-automated keypoint detection, image matching, and camera pose estimation</b> between an old picture and a set of new ones. It also offers an <b>image difference detection mode</b> based on <b>OpenCV</b>.</p>
 								<ul class="actions">
-									<li><a href="generic.html" class="button">Learn more</a></li>
+									<li><a href="https://github.com/PedroPerez14/ComputerVision-Inator" class="button">Check the code and report!</a></li>
 								</ul>
 							</div>
 						</div>
 					</section>
+					<section>
+						<a class="image fit"><img src="images/vr-tfg/highconfidence_replay.PNG" alt="" data-position="center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>VR Eye-Tracking Tool for data logging</h2>
+								<p>Built on <b>Unity</b> using <b>C#</b>. It plays 360-degrees videos along with <b>ambisonic audio</b> and performs <b>eye tracking</b>, as well as head tracking. This tool was later expanded and used as a research tool for <b><a href="https://graphics.unizar.es/projects/D-SAV360/">this paper</a></b>, in which I'm credited as co-author.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/PedroPerez14/Pipeline-VR" class="button">Check the code and thesis!</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<!-- href="#" -->
+						<a  class="image fit"><img src="images/doom/screenshot_doom2.png" alt="" data-position="center" /></a> 
+						<div class="content">
+							<div class="inner">
+								<h2>DOOM 1993 Clone</h2>
+								<p>Clone of the popular 1993 game, based on a software renderer built from scratch, in <b>C++</b> and <b>SFML</b>. It can load levels from <b>.WAD</b> files and renders the old DOOM way, using trigonometric operations and no API.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/PedroPerez14/DOOM" class="button">Check the code!</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<h1>...and more are coming!</h1>
 				</section>
-
+				
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Other</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
+				<section id="three" class="wrapper style1 fade-up">
+					<div class="inner">
+						<h1>Other</h1>
+						<p>Any relevant talks, achievements, events or miscellaneous information will go here!</p>
+						<ul>
+							<li><b>June 2023:</b> I've been listed as fourth co-author of the paper <b><a href="https://graphics.unizar.es/projects/D-SAV360/">D-SAV360: A Dataset of Gaze Scanpaths on 360º Ambisonic Videos</a></b> for my technical contribution developing the data collection tool, based on the one I initially created for my final Bachelor's degree final project.</li>
+						</ul>
+						<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+						<div class="split style1">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
 										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="5"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><a href="" class="button submit">Send Message</a></li>
 									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
+								</form>
+							</section>
+							<section>
+								<ul class="contact">
+									<li>
+										<h3>Address</h3>
+										<span>12345 Somewhere Road #654<br />
+										Nashville, TN 00000-0000<br />
+										USA</span>
+									</li>
+									<li>
+										<h3>Email</h3>
+										<a href="#">user@untitled.tld</a>
+									</li>
+									<li>
+										<h3>Phone</h3>
+										<span>(000) 000-0000</span>
+									</li>
+									<li>
+										<h3>Social</h3>
+										<ul class="icons">
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</section>
+						</div> -->
+					</div>
+				</section>
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Pedro José Pérez García. All rights reserved.</li><li>Design: Based on <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
