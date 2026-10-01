@@ -1,0 +1,370 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source "./**/*.{html,js}";
+
+/* Palette sampled from the spectrum of the old site's background (wawa2.png):
+   red #b40007 -> orange #ce6212 -> gold #d6a81d -> sage #85af73
+   -> teal #45858f -> blue #1c5a7c -> navy #0a275a, over #02021d */
+@theme {
+  --color-primary-light: #1c5a7c;
+  --color-primary-dark: #b4b8f0;
+
+  /* Neutrals: slate re-tinted towards the background's deep navy */
+  --color-slate-50: #f5f6fb;
+  --color-slate-100: #eceef7;
+  --color-slate-200: #d9dcec;
+  --color-slate-300: #b7bcd6;
+  --color-slate-400: #8a90b3;
+  --color-slate-500: #61688f;
+  --color-slate-600: #464d72;
+  --color-slate-700: #2f3558;
+  --color-slate-800: #1b2042;
+  --color-slate-900: #0e1230;
+  --color-slate-950: #05061a;
+
+  /* Red-orange end of the spectrum */
+  --color-ember-100: #fde6dc;
+  --color-ember-200: #f9c3ab;
+  --color-ember-300: #f29a72;
+  --color-ember-400: #e86a3a;
+  --color-ember-500: #ce4a12;
+  --color-ember-600: #b4300a;
+  --color-ember-700: #8f2208;
+  --color-ember-800: #6b1a0a;
+  --color-ember-900: #45110a;
+
+  /* Gold band */
+  --color-gold-100: #fbf1cf;
+  --color-gold-200: #f5e09a;
+  --color-gold-300: #ebc95c;
+  --color-gold-400: #d6a81d;
+  --color-gold-500: #b88a12;
+  --color-gold-600: #946c0e;
+  --color-gold-700: #74540f;
+  --color-gold-800: #563f10;
+  --color-gold-900: #3a2b0d;
+
+  /* Yellow-green transition */
+  --color-sage-100: #e3f1e6;
+  --color-sage-200: #c4e2cb;
+  --color-sage-300: #9ccaa8;
+  --color-sage-400: #76a586;
+  --color-sage-500: #5a8a6b;
+  --color-sage-600: #456f54;
+  --color-sage-700: #355843;
+  --color-sage-800: #284234;
+  --color-sage-900: #1a2c23;
+
+  /* Teal-blue end of the spectrum */
+  --color-ocean-100: #dcf0f3;
+  --color-ocean-200: #b5dfe5;
+  --color-ocean-300: #84c4ce;
+  --color-ocean-400: #57a3b0;
+  --color-ocean-500: #3a8593;
+  --color-ocean-600: #2b6b7d;
+  --color-ocean-700: #1c5a7c;
+  --color-ocean-800: #164671;
+  --color-ocean-900: #0f3566;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark body {
+  background-color: #0e131c;
+  background-image: linear-gradient(180deg, #1d2938 0%, #192331 8%, #16202d 20%, #121923 42%, #0e131c 100%);
+}
+
+@layer components {
+
+  .icon {
+    @apply brightness-0 dark:invert;
+  }
+
+  /* ---------- Generic links ---------- */
+
+  .link-primary {
+    @apply font-semibold text-primary-light dark:text-primary-dark hover:underline;
+  }
+
+  .link-hover {
+    @apply transition-colors hover:text-primary-light dark:hover:text-primary-dark;
+  }
+
+  .nav-link {
+    @apply font-medium transition-colors
+           hover:text-primary-light dark:hover:text-primary-dark;
+  }
+
+  /* ---------- Section titles ---------- */
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-semibold mb-8 text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-800 pb-2;
+
+           /*     <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-800 pb-2">
+ */
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl font-semibold mb-4 text-slate-800 dark:text-slate-200;
+  }
+
+  /* ---------- Cards ---------- */
+
+  .card {
+    @apply bg-white dark:bg-slate-800
+           p-4 md:p-5
+           rounded-xl
+           border border-slate-100 dark:border-slate-700;
+  }
+
+  /* ---------- Publication buttons ---------- */
+
+  .button-chip {
+    @apply px-3 py-1
+           text-xs
+           rounded-md
+           border border-slate-300 dark:border-slate-700
+           hover:bg-slate-100 dark:hover:bg-slate-800;
+  }
+
+  /* ---------- Table rows ---------- */
+
+  .table-row {
+    @apply border-b border-slate-100 dark:border-slate-700
+           hover:bg-slate-50 dark:hover:bg-slate-700/50
+           transition-colors;
+  }
+
+  .table-row-last {
+    @apply hover:bg-slate-50 dark:hover:bg-slate-700/50
+           transition-colors;
+  }
+
+  /* ---------- Table cells ---------- */
+
+  .table-heading {
+    @apply p-3 md:p-4
+           font-semibold
+           border-b border-slate-200 dark:border-slate-700;
+  }
+
+  .table-cell {
+    @apply p-3 md:p-4;
+  }
+
+  .table-cell-small {
+    @apply p-3 md:p-4
+           text-xs md:text-sm
+           text-slate-600 dark:text-slate-400;
+  }
+
+  .table-cell-title {
+    @apply p-3 md:p-4
+           font-medium
+           text-sm md:text-base;
+  }
+
+  /* ---------- Author lines ---------- */
+
+  .author-list {
+    @apply mt-2
+           text-sm
+           text-slate-700 dark:text-slate-200
+           leading-relaxed;
+  }
+
+  .venue {
+    @apply mt-1
+           flex items-center justify-between gap-2
+           text-sm
+           font-semibold
+           text-ocean-700 dark:text-ocean-200;
+  }
+
+  .paper-description {
+    @apply mt-2
+           text-sm
+           text-slate-500 dark:text-slate-400;
+  }
+
+  /* ---------- Tags ---------- */
+@layer components {
+
+.tag-bachelor {
+  @apply inline-block px-2 py-1 text-xs font-semibold rounded mb-2
+         text-sage-700 dark:text-sage-200;
+}
+
+.tag-master {
+  @apply inline-block px-2 py-1 text-xs font-semibold rounded mb-2
+         text-ocean-700 dark:text-ocean-300;
+}
+
+/* ---------- Publication type tags ---------- */
+
+.tag-poster,
+.tag-paper,
+.tag-rank {
+  @apply inline-block px-2 py-0.5 mr-2 text-xs leading-none font-semibold rounded;
+}
+
+.tag-poster {
+  @apply bg-ember-100 text-ember-700 dark:bg-ember-900/60 dark:text-ember-300;
+}
+
+.tag-paper {
+  @apply bg-sage-100 text-sage-700 dark:bg-sage-900/60 dark:text-sage-300;
+}
+
+/* Type tags placed before the (larger) publication title */
+.paper-title > .tag-poster,
+.paper-title > .tag-paper {
+  @apply relative -top-0.5 align-middle text-sm;
+}
+
+/* Venue ranking (JCR, CORE...), pushed to the right end of the venue line */
+.tag-rank {
+  @apply mr-0 shrink-0 whitespace-nowrap
+         bg-gold-100 text-gold-700 dark:bg-gold-900/60 dark:text-gold-300;
+}
+
+/* Visible placeholder for data still to be checked */
+.todo-note {
+  @apply font-mono text-ember-600 dark:text-ember-400;
+}
+
+/* ---------- Work Experience tags and cards ---------- */
+
+  .tag-workplace {
+    @apply inline-block py-1 text-xs font-semibold rounded mb-2
+            text-sage-700 dark:text-sage-200;
+  }
+
+  .job-name {
+    @apply font-bold text-lg mb-1 dark:text-slate-100;
+  }
+
+  .employer {
+    @apply text-sm mb-1;
+  }
+
+  .job-description {
+      @apply text-sm;
+  }
+
+}
+  /* ---------- Supervision cards ---------- */
+
+  .supervision-title {
+    @apply font-bold text-lg mb-1;
+  }
+
+  .supervision-author {
+    @apply text-sm mb-1;
+  }
+
+  .supervision-period {
+    @apply text-sm;
+  }
+
+  /* ---------- Publication titles ---------- */
+
+  .paper-title {
+    @apply text-lg
+           font-bold
+           leading-snug
+           dark:text-slate-100;
+  }
+    /* .paper-title {
+    @apply text-xl
+           font-bold
+           leading-snug;
+  } */
+  .paper-title-smaller {
+    @apply text-lg
+           font-bold
+           leading-snug;
+  }
+
+  .paper-link {
+    @apply transition-colors
+           hover:text-primary-light dark:hover:text-primary-dark;
+  }
+
+  /* ---------- Layout ---------- */
+
+  .container-main {
+    @apply max-w-5xl mx-auto
+           px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply space-y-16 md:space-y-24;
+  }
+
+  /* ---------- Images ---------- */
+
+  .paper-image {
+    @apply w-full rounded-lg;
+  }
+
+  .profile-image {
+    @apply w-60 h-60 md:w-48 md:h-48
+           rounded-xl
+           object-cover
+           shadow-lg
+           bg-slate-200 dark:bg-slate-800
+           shrink-0;
+  }
+
+
+
+  .tooltip-wrapper {
+    position: relative;
+    display: inline-flex;
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e293b;
+    color: #f8fafc;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 4px 8px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  /* little arrow */
+  .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top-color: #1e293b;
+  }
+
+  .tooltip-wrapper:hover .tooltip {
+    opacity: 1;
+  }
+
+  .lightbox-responsive-img {
+    max-width: 90vw !important;
+    max-height: 85vh !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+    flex-shrink: 1;
+  }
+}

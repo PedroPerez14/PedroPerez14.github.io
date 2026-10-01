@@ -1,254 +1,557 @@
-<!DOCTYPE HTML>
-<!--
-	Original template info:
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Pedro José Pérez García</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Perez</title>
+    
+    <link rel="icon" type="image/png" href="static/icons/logo.png">
+    
+    <link rel="stylesheet" href="output.css">
+    <style>
+        html.dark body {
+            background-color: #0e131c;
+            background-image: linear-gradient(180deg, #1d2938 0%, #192331 8%, #16202d 20%, #121923 42%, #0e131c 100%);
+        }
+    </style>
+</head>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">About</a></li>
-							<li><a href="#two">Work Experience</a></li>
-							<li><a href="#one">Personal Projects</a></li>
-							<li><a href="#three">Other</a></li>
-						</ul>
-					</nav>
-					<ul class="icons">
-						<li><a href="https://github.com/PedroPerez14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="mailto:pjperezTIC@gmail.com" class="icon regular fa-envelope"><span class="label">Mail</span></a></li>
-						<li><a href="https://www.linkedin.com/in/pedro-jose-perez-garcia/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					</ul>
-				</div>
-			</section>
+<body class="bg-slate-50 text-slate-800 transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200 font-sans leading-relaxed">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>About</h1>
-							<span class="image left avatar">
-								<image src="images/p.png" alt="Avatar">
-							</span>
-							<p>Hi, I am Pedro, nice to meet you!</p>
-							<p>I'm a Computer Science Engineer with a strong interest in Computer Graphics and game development, especially real-time rendering and engine programming. I am also interested in other topics like Computer Vision or Virtual Reality.</p>
-							<p>I finished my Masters degree studies at Universidad de Zaragoza in 2024 and will soon get into the next chapter of my journey, aiming to continue growing and expanding my knowledge and skills. Stay tuned! ;)</p>
-							<p><b>Update:</b> The next chapter is here! I've recently started a PhD on human perception in XR!</p>
-							<p>You can check my full curriculum <b><a href="files/cv_pedro_perez.pdf"> here.</a></b></p>
-							<!-- <ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>-->
-						</div>
-					</section>
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Work experience</h2>
-								<div class="features">
-								<section>
-									<!-- <span class="icon solid major fa-code"></span> -->
-									<h2><a href="https://graphics.unizar.es/">Graphics and Imaging Lab</a></h2>
-									<h3>PhD Candidate focused on the study of human perception and attention in XR</h3>
-									<h4>January 2026 - Present day</h4>
-									<p>Relevant tools and skills: Research, XR, Eye-tracking, Face-tracking, Unity, TBD. </p>
-								</section>
-								<section>
-									<!-- <span class="icon solid major fa-code"></span> -->
-									<h2><a href="https://diis.unizar.es/es">DIIS Universidad de Zaragoza</a></h2>
-									<h3>Research Engineer working in Large Language Models</h3>
-									<h4>March 2025 - December 2025</h4>
-									<p>Relevant tools and skills: Python, LLMs, Docker, Text data extraction, cleaning and augmentation, Model finetuning. </p>
-								</section>
-								<section>
-									<!-- <span class="icon solid major fa-code"></span> -->
-									<h2><a href="https://colorlab.science/">COLOR Lab</a></h2>
-									<h3>Research Intern in oceanic underwater rendering</h3>
-									<h4>September 2023 - December 2023</h4> 
-									<p>Relevant tools and skills: C++, Python, Mitsuba2, Mitsuba3, Spectral Rendering, Path Tracing.</p>
-								</section>
-								<section>
-									<h2><a href="https://graphics.unizar.es/">Graphics and Imaging Lab</a></h2>
-									<h3>Research Engineer in VR, Computer Graphics and Machine Learning</h3>
-									<h4>March 2022 - September 2022</h4> 
-									<p>Relevant tools and skills: C#, Python, Unity, Virtual Reality, Eye Tracking, Blender Add-on development, Machine Learning</p>
-								</section>
-								<section>
-									<h2><a href="https://www.grupoentaban.es/">Entaban Servicios</a></h2>
-									<h3>Extracurricular activity instructor for high school children</h3>
-									<h4>September 2021 - June 2022</h4> 
-									<p>Relevant tools and skills: Scratch, GDScript, Godot, Teaching, Communication.</p>
-								</section>
-							</div>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
-						</div>
-					</section>
+    <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="static/icons/logo.png" alt="Logo" class="h-16 w-16 object-contain rounded p-1">
+                </div>
+                
+                <div class="hidden md:flex flex-1 items-center justify-end mr-6">
+                    <div class="flex items-baseline space-x-6">
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#publications" class="nav-link">Publications</a>
+                        <a href="#supervision" class="nav-link">Supervision</a>
+                        <a href="#teaching" class="nav-link">Teaching</a>
+                        <a href="#professional-service" class="nav-link">Professional service</a>
+                        <a href="#work-experience" class="nav-link">Work experience</a>
+                    </div>
+                </div>
 
-				<!-- One -->
-				<section id="one" class="wrapper style2 spotlights">
-					<div class="inner">
-						<h1>Personal projects</h1>
-					</div>
-					<section>
-						<a class="image fit"><img src="images/srat-rt/gamma_correction.png" alt="" data-position="center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Real-time spectral renderer</h2>
-								<p>Built from scratch using <b>C++ and OpenGL</b> for my Master's Thesis. Spectral rendering is achieved by applying <b>spectral upsampling</b> over RGB reflectance textures, adapted from <b><a href="https://rgl.epfl.ch/publications/Jakob2019Spectral">this paper</a></b>. It also allows for oceanic rendering, adapted from <b><a href="https://www.eurographics.es/wp-content/uploads/2023/05/TFM_underwater_rendering_CEIG2023.pdf">this other paper</a></b>. Observer sensitivity curves and oceanic water type customization on the fly are supported.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/PedroPerez14/sRAT-RT" class="button">Check the code and thesis!</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a class="image fit"><img src="images/clouds_msoa_pt/nube_square.png" alt="" data-position="center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Volumetric Path Tracer with Multiple Importance Sampling</h2>
-								<p>Built using <b>C++</b> on top of the <b><a href="https://github.com/wjakob/nori">Nori</a></b> code skeleton. It allows for full rendering of participating media by using <b>path tracing</b>, simulating <b>both single and multiple scattering</b>. It also allows loading .vdb volumetric data via custom Blender add-ons.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/PedroPerez14/MSoA-participating-media" class="button">Check the code and report!</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a class="image fit"><img src="images/computervision-inator/readme_img.png" alt="" data-position="center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>ComputerVision-inator</h2>
-								<p>Written on <b>Python</b>, this program performs <b>semi-automated keypoint detection, image matching, and camera pose estimation</b> between an old picture and a set of new ones. It also offers an <b>image difference detection mode</b> based on <b>OpenCV</b>.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/PedroPerez14/ComputerVision-Inator" class="button">Check the code and report!</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a class="image fit"><img src="images/vr-tfg/highconfidence_replay.PNG" alt="" data-position="center" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>VR Eye-Tracking Tool for data logging</h2>
-								<p>Built on <b>Unity</b> using <b>C#</b>. It plays 360-degrees videos along with <b>ambisonic audio</b> and performs <b>eye tracking</b>, as well as head tracking. This tool was later expanded and used as a research tool for <b><a href="https://graphics.unizar.es/projects/D-SAV360/">this paper</a></b>, in which I'm credited as co-author.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/PedroPerez14/Pipeline-VR" class="button">Check the code and thesis!</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section>
-						<!-- href="#" -->
-						<a  class="image fit"><img src="images/doom/screenshot_doom2.png" alt="" data-position="center" /></a> 
-						<div class="content">
-							<div class="inner">
-								<h2>DOOM 1993 Clone</h2>
-								<p>Clone of the popular 1993 game, based on a software renderer built from scratch, in <b>C++</b> and <b>SFML</b>. It can load levels from <b>.WAD</b> files and renders the old DOOM way, using trigonometric operations and no API.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/PedroPerez14/DOOM" class="button">Check the code!</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<h1>...and more are coming!</h1>
-				</section>
-				
-				<!-- Three -->
-				<section id="three" class="wrapper style1 fade-up">
-					<div class="inner">
-						<h1>Other</h1>
-						<p>Any relevant talks, achievements, events or miscellaneous information will go here!</p>
-						<ul>
-							<li><b>June 2025:</b> I took part on the XIV Jornada de los Jóvenes Investigadores (Day of the Young Researchers) of the Institute for Research in Engineering in Aragón (I3A), where I presented the work I did for my Master's thesis in poster format. You can check the poster <b><a href="files/Poster_JJI_2025_Pedro.pdf"> here</a></b>.</li>
-							<li><b>June 2023:</b> I've been listed as fourth co-author of the paper <b><a href="https://graphics.unizar.es/projects/D-SAV360/">D-SAV360: A Dataset of Gaze Scanpaths on 360º Ambisonic Videos</a></b> for my technical contribution developing the data collection tool, based on the one I initially created for my final Bachelor's degree final project.</li>
-						</ul>
-						<!-- <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-						<div class="split style1">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><a href="" class="button submit">Send Message</a></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<ul class="contact">
-									<li>
-										<h3>Address</h3>
-										<span>12345 Somewhere Road #654<br />
-										Nashville, TN 00000-0000<br />
-										USA</span>
-									</li>
-									<li>
-										<h3>Email</h3>
-										<a href="#">user@untitled.tld</a>
-									</li>
-									<li>
-										<h3>Phone</h3>
-										<span>(000) 000-0000</span>
-									</li>
-									<li>
-										<h3>Social</h3>
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										</ul>
-									</li>
-								</ul>
-							</section>
-						</div> -->
-					</div>
-				</section>
-			</div>
+                <div class="flex items-center gap-2">
+                    
+   <button onclick="toggleTheme()" 
+    class="p-2 rounded-full hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors focus:outline-none" 
+    aria-label="Toggle Dark Mode">
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Pedro José Pérez García. All rights reserved.</li><li>Design: Based on <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+    <span class="block dark:hidden">
+        <img src="static/icons/sun.svg" width="20" height="20" class="icon" alt="Light mode">
+    </span>
+    
+    <span class="hidden dark:block">
+        <svg width="20" height="20" viewBox="0 0 24 24" style="fill:#e2e8f0;" aria-hidden="true">
+            <path d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </svg>
+    </span>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+</button>
+                        </button>
+                    <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-	</body>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+            <div class="px-4 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary-light dark:hover:text-primary-dark">About</a>
+                <a href="#publications" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary-light dark:hover:text-primary-dark">Publications</a>
+                <a href="#supervision" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary-light dark:hover:text-primary-dark">Supervision</a>
+                <a href="#teaching" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary-light dark:hover:text-primary-dark">Teaching</a>
+                <a href="#professional-service" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary-light dark:hover:text-primary-dark">Professional service</a>
+                <a href="#work-experience" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary-light dark:hover:text-primary-dark">Work experience</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 space-y-16 md:space-y-24">
+
+<section id="about" class="scroll-mt-24">
+    
+    <div class="w-full rounded-2xl p-6 md:p-8">
+        
+        <!-- Title -->
+        <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100 mb-6">
+            Hi, I am Pedro, nice to meet you!
+        </h2>
+
+        <!-- Main layout -->
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
+
+            <!-- Profile image -->
+            <img
+                src="static/images/nestor.jpg"
+                alt="Pedro Perez"
+                class="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-md bg-slate-200 dark:bg-slate-800 shrink-0"
+            >
+
+            <!-- Content -->
+             <!-- https://graphics.unizar.es/ -->
+            <div class="flex-1 space-y-4 text-center md:text-left">
+                <p class="text-slate-700 dark:text-slate-200 leading-relaxed">
+                    I'm a PhD student at the 
+                    <a href="https://graphics.unizar.es/" class="link-primary hover:underline">Graphics and Imaging Lab</a> at the University of Zaragoza.
+                    I'm under the supervision of
+                    <a href="https://ana-serrano.github.io/" class="link-primary hover:underline">Ana Serrano</a>
+                    and
+                    <a href="https://webdiis.unizar.es/~danims/" class="link-primary hover:underline">Daniel Martin</a>
+                    as part of the 
+                    <a href="https://ana-serrano.github.io/PROXIE/" class="link-primary hover:underline">PROXIE</a>
+                    project team.
+                </p>
+                <p class="text-slate-700 dark:text-slate-200 leading-relaxed">
+                    My research interests are mainly centered around Virtual and Extended Reality, working on topics such as the study 
+                    and modeling of human visual and attentive behavior, multimodality and perceptual manipulations, while trying to focus 
+                    on ecological validity.
+                    I am also interested in computer graphics and real-time rendering.
+                </p>
+                <!-- <p class="text-slate-700 dark:text-slate-200 leading-relaxed">
+                    Insertar hobbies y copito/mimi aquí
+                </p> -->
+
+                <div class="flex flex-wrap gap-2 pt-2 justify-center md:justify-start">
+
+                    <!-- GitHub -->
+                    <div class="tooltip-wrapper">
+                    <a href="https://github.com/pedroperez14"
+                    class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                        <img src="static/icons/github.svg" width="16" height="16" class="icon" alt="GitHub">
+                        <!-- <span class="text-sm">GitHub</span> -->
+                    </a>
+                    <span class="tooltip">GitHub</span>
+                    </div>
+
+                    <!-- Scholar -->
+                    <div class="tooltip-wrapper">
+                    <a href="https://scholar.google.es/citations?user=rBD62NUAAAAJ"
+                    class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                        <img src="static/icons/google-scholar.svg" width="16" height="16" class="icon" alt="Scholar">
+                        <!-- <span class="text-sm">Scholar</span> -->
+                    </a>
+                    <span class="tooltip">Scholar</span>
+                    </div>
+
+                    <!-- ORCID -->
+                    <div class="tooltip-wrapper">
+                    <a href="https://orcid.org/0009-0006-3906-8493"
+                    class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                        <img src="static/icons/orcid.svg" width="16" height="16" class="icon" alt="ORCID">
+                        <!-- <span class="text-sm">ORCID</span> -->
+                    </a>
+                    <span class="tooltip">ORCID</span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="tooltip-wrapper">
+                        <a href="mailto:p.perez@unizar.es"
+                        class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                            <img src="static/icons/envelope.svg" width="16" height="16" class="icon" alt="Email">
+                            <!-- <span class="text-sm">Email</span> -->
+                        </a>
+                    <span class="tooltip">Email</span>
+                    </div>
+                    <div class="tooltip-wrapper">
+                    <a href="https://www.linkedin.com/in/pedro-jose-perez-garcia/" class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                        <img src="static/icons/LinkedIn_icon.svg" width="16" height="16" class="icon" alt="Linkedin">
+                    </a>
+                    <span class="tooltip">Linkedin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+        
+
+<section id="publications" class="scroll-mt-24">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-800 pb-2">
+        Publications
+    </h2>
+
+    <div class="divide-y divide-slate-200 dark:divide-slate-700">
+        
+        <div class="py-8">
+            <div class="flex flex-col md:flex-row md:items-center gap-6">
+                <div style="flex:0 0 25%;" class="flex items-center">
+                    <img src="static/images/d-sav360_image.png" 
+                        class="paper-image w-full h-auto" 
+                        style="cursor: zoom-in;" 
+                        alt="D-SAV 360 teaser image" 
+                        onclick="openLightbox(this.src)">              
+                </div>
+                <div style="flex:1 1 0%; min-width:0;">
+                    <h3 class="paper-title">
+                        <span class="tag-paper">Paper</span>
+                        <a href="https://graphics.unizar.es/projects/D-SAV360/" class="paper-link">
+                            D-SAV360: A Dataset of Gaze Scanpaths on 360º Ambisonic Videos
+                        </a>
+                    </h3>
+                    <p class="venue"><span>IEEE Transactions on Visualization and Computer Graphics (ISMAR 2023)</span><span class="tag-rank">JCR Q1 <span class="todo-note">// TODO</span></span></p>
+                    <p class="author-list">
+                        <a href="https://edurnebernal.github.io/" class="hover:underline">Edurne Bernal-Berdun</a>,
+                        <a href="https://webdiis.unizar.es/~danims/" class="hover:underline">Daniel Martin</a>,
+                        <a href="https://smalpica.github.io/" class="hover:underline">Sandra Malpica</a>,
+                        <span class="font-bold text-primary-light dark:text-primary-dark">Pedro Perez-Garcia</span>,
+                        <a href="https://giga.cps.unizar.es/~diegog/" class="hover:underline">Diego Gutierrez</a>,
+                        <a href="https://webdiis.unizar.es/~bmasia/" class="hover:underline">Belen Masia</a>,
+                        <a href="https://ana-serrano.github.io" class="hover:underline">Ana Serrano</a>
+                    </p>
+                    <!-- <p class="paper-description">
+                        Test for paper details
+                    </p> -->
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <a href="https://graphics.unizar.es/papers/Bernal-Berdun2023dsav360.pdf" class="button-chip">PDF</a>
+                        <a href="https://graphics.unizar.es/projects/D-SAV360/" class="button-chip">Project Page</a>
+                        <a href="https://nas-graphics.unizar.es/s/dsav360_slides" class="button-chip">Presentation</a>
+                        <a href="https://github.com/edurnebernal/D-SAV360" class="button-chip">Code</a>
+                        <a href="https://graphics.unizar.es/projects/D-SAV360/#bibtex" class="button-chip">Bibtex</a>
+                        <a href="https://doi.org/10.1016/j.cag.2022.06.002" class="button-chip">DOI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-8">
+            <div class="flex flex-col md:flex-row md:items-center gap-6">
+                <div style="flex:0 0 25%;" class="flex items-center">
+                    <img src="static/images/poster_jji25_teaser.jpg"
+                        class="paper-image w-full h-auto"
+                        style="cursor: zoom-in;"
+                        alt="Techniques for Real-Time Spectral Rendering poster"
+                        onclick="openLightbox(this.src)">
+                </div>
+                <div style="flex:1 1 0%; min-width:0;">
+                    <h3 class="paper-title">
+                        <span class="tag-poster">Poster</span>
+                        <a href="static/files/Poster_JJI_2025_Pedro.pdf" class="paper-link">
+                            Techniques for Real-Time Spectral Rendering
+                        </a>
+                    </h3>
+                    <p class="venue"><span>XIV Jornada de Jóvenes Investigadores/as del I3A (2025)</span></p>
+                    <p class="author-list">
+                        <span class="font-bold text-primary-light dark:text-primary-dark">Pedro Perez-Garcia</span>,
+                        Nestor Monzon,
+                        Adolfo Muñoz
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <a href="static/files/Poster_JJI_2025_Pedro.pdf" class="button-chip">Poster</a>
+                        <a href="https://github.com/PedroPerez14/sRAT-RT" class="button-chip">Code</a>
+                        <a href="https://zaguan.unizar.es/record/152419/files/TAZ-TFM-2024-837.pdf" class="button-chip">Master's Thesis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <section id="supervision" class="scroll-mt-24">
+            <h2 class="section-title">Supervision</h2>
+            <p class="text-slate-700 dark:text-slate-200 leading-relaxed">
+                Nothing to see here... for now!
+            </p>
+            <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <div class="flex justify-between items-baseline w-full">
+                        <span class="tag-bachelor">Bachelor's Thesis<span class="text-slate-900 dark:text-slate-400"> · Computer Engineering </span></span>
+                        <span class="font-semibold text-sm text-slate-900 dark:text-slate-300">
+                            With Honors
+                        </span>
+                    </div> 
+                   <h3 class="supervision-title">
+                        <a href="https://victorr.me/articles/bs-thesis" class="paper-link">
+                            Real-time rendering engine for implicit surfaces using sparse structures
+                        </a>
+                    </h3>
+                    <p class="supervision-author">
+                        <a href="https://victorr.me" class="link-primary">Victor Orrios</a>
+                    </p>
+                    <p class="supervision-period">Feb-Jul 2026</p>
+                </div>
+                <div class="card">
+                    <div class="flex justify-between items-baseline w-full">
+                        <span class="tag-bachelor">Bachelor's Thesis<span class="text-slate-900 dark:text-slate-400"> · Computer Engineering </span></span>
+                        <span class="font-semibold text-sm text-slate-900 dark:text-slate-300">
+                            With Honors
+                        </span>
+                    </div>
+                    <h3 class="supervision-title">
+                        Study of variance reduction techniques to accelerate convergence in Monte Carlo rendering
+                    </h3>
+                    <p class="supervision-author"><a class="link-primary">Miguel Angel Luquin</a></p>
+                    <p class="supervision-period">Feb-Jul 2026</p>
+                </div>
+                <div class="card">
+                    <span class="tag-master">Master's Thesis <span class="text-slate-900 dark:text-slate-400">· Robotics, Graphics and Computer Vision</span></span>
+                    <h3 class="supervision-title">Techniques for Real-Time Spectral Rendering</h3>
+                    <p class="supervision-author"><a href="https://pedroperez14.github.io" class="link-primary">Pedro J. Pérez</a></p>
+                    <p class="supervision-period">Feb-Jul 2024 </p>
+                </div>
+            </div> -->
+        </section>
+        <!-- End of Supervision -->
+
+        <section id="teaching" class="scroll-mt-24">
+            <h2 class="section-title">Teaching</h2>
+            
+            <p class="text-slate-700 dark:text-slate-200 leading-relaxed">
+                Nothing to see here... for now!
+            </p>
+
+            <!-- <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700">
+                <table class="w-full text-left border-collapse min-w-[500px]">
+                    <thead class="bg-slate-100 dark:bg-slate-800/50">
+                        <tr>
+                            <th class="table-heading">Subject</th>
+                            <th class="table-heading">Degree</th>
+                            <th class="table-heading">Period(s)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white dark:bg-slate-800">
+                        <tr class="table-row">
+                            <td class="table-cell-title">Modeling and Simulation of Appearance</td>
+                            <td class="table-cell-small">
+                                <a href="https://estudios.unizar.es/estudio/ver?id=713" class="hover:text-primary-light dark:hover:text-primary-dark hover:underline transition-colors">
+                                            Master in Robotics, Graphics and Computer Vision
+                                </a>
+                            </td>
+                            <td class="table-cell-small">Fall 2024, 2025, 2026</td>
+                        </tr>
+                        <tr class="table-row-last">
+                            <td class="table-cell-title">Computational Imaging</td>
+                            <td class="table-cell-small">
+                                <a href="https://estudios.unizar.es/estudio/ver?id=713" class="hover:text-primary-light dark:hover:text-primary-dark hover:underline transition-colors">
+                                    Master in Robotics, Graphics and Computer Vision
+                                </a>
+                            </td>
+                            <td class="table-cell-small">Spring 2026, 2027</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+        </section>
+        <!-- End of Teaching -->
+
+        <section id="professional-service" class="scroll-mt-24">
+            <h2 class="section-title">Professional service</h2>
+
+            <h3 class="section-subtitle">Paper reviews</h3>
+            <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700">
+                <table class="w-full table-fixed text-left border-collapse min-w-[500px]">
+                    <thead class="bg-slate-100 dark:bg-slate-800/50">
+                        <tr>
+                            <th class="table-heading w-1/2">Venue</th>
+                            <th class="table-heading w-1/3">Type</th>
+                            <th class="table-heading">Year</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white dark:bg-slate-800">
+                        <tr class="table-row">
+                            
+                            <td class="table-cell-small">
+                                <a href="https://sap.acm.org/2026/" class="hover:text-primary-light dark:hover:text-primary-dark hover:underline transition-colors">
+                                            ACM Symposium on Applied Perception 2026
+                                </a>
+                            </td>
+                            <td class="table-cell-small">Conference</td>
+                            <td class="table-cell-small">2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-subtitle mt-10">Dissemination</h3>
+            <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700">
+                <table class="w-full table-fixed text-left border-collapse min-w-[500px]">
+                    <thead class="bg-slate-100 dark:bg-slate-800/50">
+                        <tr>
+                            <th class="table-heading w-1/2">Activity</th>
+                            <th class="table-heading w-1/3">Type</th>
+                            <th class="table-heading">Year</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white dark:bg-slate-800">
+                        <tr class="table-row">
+                            
+                            <td class="table-cell-small">
+                                <a href="https://ucc.unizar.es/noche-investigadores-2026/zaragoza" class="hover:text-primary-light dark:hover:text-primary-dark hover:underline transition-colors">
+                                            European researchers' night
+                                </a>
+                            </td>
+                            <td class="table-cell-small">General public showcase</td>
+                            <td class="table-cell-small">2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- End of Professional service -->
+
+        <section id="work-experience" class="scroll-mt-24">
+            <h2 class="section-title">Work experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+                <!-- Job 1 -->
+                <div class="card">
+                    <div class="flex justify-between items-baseline w-full">
+                        <span class="tag-workplace"><span class="text-slate-900 dark:text-slate-400">Zaragoza, Spain </span></span>
+                        <span class="font-semibold text-sm text-slate-900 dark:text-slate-300">
+                            Jan 2026 - Present day
+                        </span>
+                    </div> 
+                   <h3 class="job-name">
+                        <a>
+                            PhD Student
+                        </a>
+                    </h3>
+                    <p class="employer">
+                        <a href="https://graphics.unizar.es" class="link-primary">Graphics and Imaging Lab</a>
+                    </p>
+                    <p class="job-description">Relevant tools and skills: Research, XR, Eye-tracking, Face-tracking, Unity, TBD.</p>
+                </div>
+                
+                <!-- Job 2 -->
+                <div class="card">
+                    <div class="flex justify-between items-baseline w-full">
+                        <span class="tag-workplace"><span class="text-slate-900 dark:text-slate-400">Zaragoza, Spain </span></span>
+                        <span class="font-semibold text-sm text-slate-900 dark:text-slate-300">
+                            Mar 2025 - Dec 2025
+                        </span>
+                    </div> 
+                   <h3 class="job-name">
+                        <a>
+                            Research Engineer working in Large Language Models
+                        </a>
+                    </h3>
+                    <p class="employer">
+                        <a href="https://diis.unizar.es/es" class="link-primary">DIIS Universidad de Zaragoza</a>
+                    </p>
+                    <p class="job-description">Relevant tools and skills: Python, LLMs, Docker, Text data extraction, cleaning and augmentation, Model finetuning.</p>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="card">
+                    <div class="flex justify-between items-baseline w-full">
+                        <span class="tag-workplace"><span class="text-slate-900 dark:text-slate-400">Eilat, israel & Remote</span></span>
+                        <span class="font-semibold text-sm text-slate-900 dark:text-slate-300">
+                            Sep 2023 - Dec 2023
+                        </span>
+                    </div> 
+                   <h3 class="job-name">
+                        <a>
+                            Research Intern in oceanic underwater rendering
+                        </a>
+                    </h3>
+                    <p class="employer">
+                        <a href="https://www.deryaakkaynak.com/" class="link-primary">COLOR Lab</a>
+                    </p>
+                    <p class="job-description">Relevant tools and skills: C++, Python, Mitsuba2, Mitsuba3, Spectral Rendering, Path Tracing.</p>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="card">
+                    <div class="flex justify-between items-baseline w-full">
+                        <span class="tag-workplace"><span class="text-slate-900 dark:text-slate-400">Zaragoza, Spain </span></span>
+                        <span class="font-semibold text-sm text-slate-900 dark:text-slate-300">
+                            Mar 2022 - Sep 2022
+                        </span>
+                    </div> 
+                   <h3 class="job-name">
+                        <a>
+                            Research Engineer in VR, Computer Graphics and Machine Learning
+                        </a>
+                    </h3>
+                    <p class="employer">
+                        <a href="https://graphics.unizar.es/" class="link-primary">Graphics and Imaging Lab</a>
+                    </p>
+                    <p class="job-description">Relevant tools and skills: C#, Python, Unity, Virtual Reality, Eye Tracking, Blender Add-on development, Machine Learning.</p>
+                </div>
+
+                <!-- Job 5 -->
+                <div class="card">
+                    <div class="flex justify-between items-baseline w-full">
+                        <span class="tag-workplace"><span class="text-slate-900 dark:text-slate-400">Zaragoza, Spain </span></span>
+                        <span class="font-semibold text-sm text-slate-900 dark:text-slate-300">
+                            Sep 2021 - Jun 2022
+                        </span>
+                    </div> 
+                   <h3 class="job-name">
+                        <a>
+                            Extracurricular activity instructor for high school children
+                        </a>
+                    </h3>
+                    <p class="employer">
+                        <a href="https://www.grupoentaban.es/" class="link-primary">Entaban Servicios</a>
+                    </p>
+                    <p class="job-description">Relevant tools and skills: Scratch, GDScript, Godot, Teaching, Communication.</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- End of Work experience -->
+
+    </main>
+
+    <footer class="border-t border-slate-200 dark:border-slate-800 mt-8 py-8 text-center text-slate-500 dark:text-slate-400 text-sm">
+        <p>&copy; 2026 Pedro José Pérez García. All rights reserved.</p>
+    </footer>
+    
+    <div id="lightbox" 
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background-color: rgba(0, 0, 0, 0.9); align-items: center; justify-content: center; backdrop-filter: blur(4px); cursor: zoom-out;" 
+    class="p-4 transition-opacity" 
+    onclick="closeLightbox()">
+    
+    <img id="lightbox-img" 
+         src="" 
+         alt="Expanded work teaser" 
+         class="lightbox-responsive-img rounded shadow-2xl">
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            // Set the image source
+            lightboxImg.src = src;
+            // Use inline flex to ensure it centers the image correctly
+            lightbox.style.display = 'flex';
+            // Lock background scrolling
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            // Hide the lightbox
+            lightbox.style.display = 'none';
+            
+            // Fixed: Reset the src attribute so the old image doesn't flash next time a new one loads
+            lightboxImg.src = '';
+            
+            // Restore background scrolling
+            document.body.style.overflow = '';
+        }
+    </script>
+</body>
 </html>
