@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Perez</title>
     
-    <link rel="icon" type="image/png" href="static/icons/logo.png">
+    <!-- TODO: favicon disabled until my own icon is ready -->
+    <!-- <link rel="icon" type="image/png" href="static/icons/logo.png"> -->
     
     <link rel="stylesheet" href="output.css">
     <style>
@@ -18,11 +19,12 @@
 
 <body class="bg-slate-50 text-slate-800 transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200 font-sans leading-relaxed">
 
-    <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
+    <nav class="sticky top-0 z-50 w-full bg-slate-50 dark:bg-[#1d2938] border-b border-slate-200/70 dark:border-white/5">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <img src="static/icons/logo.png" alt="Logo" class="h-16 w-16 object-contain rounded p-1">
+                    <!-- TODO: logo disabled until my own icon is ready -->
+                    <!-- <img src="static/icons/logo.png" alt="Logo" class="h-16 w-16 object-contain rounded p-1"> -->
                 </div>
                 
                 <div class="hidden md:flex flex-1 items-center justify-end mr-6">
@@ -63,7 +65,7 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200/70 dark:border-white/5 bg-slate-50 dark:bg-[#1d2938]">
             <div class="px-4 pt-2 pb-4 space-y-1 sm:px-3">
                 <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary-light dark:hover:text-primary-dark">About</a>
                 <a href="#publications" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary-light dark:hover:text-primary-dark">Publications</a>
@@ -91,9 +93,9 @@
 
             <!-- Profile image -->
             <img
-                src="static/images/nestor.jpg"
+                src="static/images/pedro.jpeg"
                 alt="Pedro Perez"
-                class="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-md bg-slate-200 dark:bg-slate-800 shrink-0"
+                class="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-md bg-slate-200 dark:bg-slate-800 shrink-0 object-[50%_70%] "
             >
 
             <!-- Content -->
@@ -198,7 +200,7 @@
                             D-SAV360: A Dataset of Gaze Scanpaths on 360º Ambisonic Videos
                         </a>
                     </h3>
-                    <p class="venue"><span>IEEE Transactions on Visualization and Computer Graphics (ISMAR 2023)</span><span class="tag-rank">JCR Q1 <span class="todo-note">// TODO</span></span></p>
+                    <p class="venue"><span>IEEE Transactions on Visualization and Computer Graphics (ISMAR 2023)</span><span class="tag-rank">JCR Q1 <span class="todo-note"></span></span></p>
                     <p class="author-list">
                         <a href="https://edurnebernal.github.io/" class="hover:underline">Edurne Bernal-Berdun</a>,
                         <a href="https://webdiis.unizar.es/~danims/" class="hover:underline">Daniel Martin</a>,
